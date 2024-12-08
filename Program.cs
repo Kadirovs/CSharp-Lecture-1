@@ -145,9 +145,7 @@ string feedback = performance switch
 };
 Console.WriteLine(feedback);*/
 
-using System;
-public class Hello{
-    public static void Main(){
+
    
 			/*int score = Convert.ToInt32(Console.ReadLine());
         
@@ -278,13 +276,63 @@ public class Hello{
 			}
 			Console.WriteLine($"{"The maximum element = "} {maximum}"); */
 
-			int number = int.Parse(Console.ReadLine());
+			/*int number = int.Parse(Console.ReadLine());
 			for(int i=0;i<=number;i+=2){
 				Console.WriteLine(i+" ");
+			}*/
+
+			/*int[] age; 
+			age = new int[5];
+			var age1 = new int [5]{1,2,3,4,5};
+			int[] numbers = {1,2,3,4,5};
+			for(int i=0;i<5;i++){
+				Console.WriteLine(numbers[i]);
+			}*/
+
+/*int [][] jaggedArray = new int[3][];
+jaggedArray[0] = new int[3];
+jaggedArray[1] = new int[2];
+	for(int i=0; i < jaggedArray.Length; i++){
+
+		if(jaggedArray[i] != null)
+			{
+				for(int j=0; j < jaggedArray[i].Length; j++)
+				{
+					Console.Write(jaggedArray[i][j] + " ");
+				}
 			}
+			Console.WriteLine();
+
+}*/
 			
 
 			
+			//first way
+			/*foreach (int i in number){
+			Console.WriteLine( i);}
 
-    } 
+			//Second way 
+
+			for (int i=0; i<number.Length; i++){
+				Console.WriteLine(number[i]+ " ");
+			}*/
+using System;
+public class Hello{
+    public static void Main(){
+			int[] number = new int[5] {5,4,8,2,10};
+			int max=number[0];
+			int bigIndex = 0;
+			for (int i = 1; i <= number.Length; i++)
+        {
+            if (number[i] <= max)
+            {
+              	bigIndex = i;
+            	max = number[i];
+            }
+            
+
+        }
+        Console.WriteLine(max);
 }
+} 
+
